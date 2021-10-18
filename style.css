@@ -180,10 +180,14 @@ li{
 .onboard_card{
     grid-column: none;
 }
-.smarthome_card ,.booking_card{ 
-    margin-top: 100px;
+.smarthome_card{ 
+    margin-top: 200px;
     /* position: relative;
     top: 100px; */
+}
+.booking_card{ 
+    margin-top: 150px;
+    margin-right: 20px;
 }
 .gallery_card img{
     border-radius: 18px;
@@ -198,4 +202,108 @@ li{
     font-size: 24px;
     font-weight: 500;
     /* margin-bottom: 106px; */
+}
+.see_more_gallery a{
+    color: rgba(45, 156, 219, 1);
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    ;
+
+}
+.see_more_gallery{
+    text-align: end
+}
+.see_more_gallery a span{
+    position: relative;
+    top: 5px;
+    font-weight: 500;
+}
+
+.bloc_team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 170px;
+    margin-top: 220px;
+}
+.team_description{
+    width: 280px;
+    height: fit-content;
+}
+.meet_team{
+    font-size: 18px;
+    color:rgba(235, 87, 87, 1);
+    font-weight: 500;
+}
+.chilled_team{
+    font-size: 36px;
+    font-weight: 500;
+}
+.bloc_team p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.teams_pictures{
+    display: flex;
+    align-items: center;
+}
+.teams_pictures img{
+    border-radius: 20px;
+}
+.pic2_3{
+    margin-left: 30x;
+}
+.teams_pic2{
+        margin-bottom: 20px;
+}
+
+.quote1{
+    
+    padding-right: 120px;
+}
+.quote_customer{
+    font-size: 36px;
+    font-weight: 500;
+    width: 937px;
+    margin-left: 165px;
+    padding-right: 120px;
+}
+.customer_profil{
+    height: fit-content;
+    display: flex;
+}
+.customer_pic img{
+    border-radius: 10px;
+}
+.customer_name_society{
+    margin-left: 30px;
+}
+.customer_name{
+    font-size: 24px;
+    width: fit-content;
+}
+
+.customer_society{
+    font-size: 18px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: black;
+    color: rgba(255, 255, 255, 1);
+    padding:50px 10% 10px 15%
+}
+footer nav{
+    margin-left: 15%;
+}
+footer li{
+    font-size: 18px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 1)
 }

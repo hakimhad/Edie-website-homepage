@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/36afeebe26.js" crossorigin="anonymous"></script>
         	<title>EDIE HOMEPAGE</title>
     	</head>  
 	<header>
@@ -96,29 +97,33 @@
 					<div class="booking_card gallery_card">
 						<img src="/booking.png" alt="" class="booking_text1">
 						<div class="gallery_card_text1">Mobile application</div>
-						<div>Booking system</div>
+						<div class="gallery_card_text2">Booking system</div>
 					</div>
 
 					<div class="juice_card gallery_card">
 						<img src="/juice-product.png" alt="" class="juice_text1">
 						<div class="gallery_card_text1">Front End application</div>
-						<div>Juice product homepage</div>
+						<div class="gallery_card_text2">Juice product homepage</div>
 					</div>
 				</div>
 				<div class="see_more_gallery">
-					<a href="##">see more</a>
+					<a href="##">see more         <span class="material-icons">
+						   trending_flat
+						</span></a>
 				</div>
 			</div>
 			<div class="bloc_team">
 				<div class="team_description">
-					<span class="meet_team">Meet the team</span>
-					<span class="chilled_team">we are chilled and a laidback team</span>
+					<div class="meet_team">Meet the team</div>
+					<div class="chilled_team">we are chilled and a laidback team</div>
 					<p class="p_team">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
 				<div class="teams_pictures">
 					<div class="teams_pic1"><img src="/person3.png" alt=""></div>
-					<div class="teams_pic1"><img src="/person1.png" alt=""></div>
-					<div class="teams_pic1"><img src="/person2.png" alt=""></div>
+					<div class="pic2_3">
+						<div class="teams_pic2"><img src="/person1.png" alt=""></div>
+						<div class="teams_pic3"><img src="/person2.png" alt=""></div>
+					</div>
 				</div>
 			</div>
 			<div class="quote_customer">
@@ -147,10 +152,25 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="footer_social"></div>
-		<div class="footer_input_email">
+		<div class="footer_social">
+			<div class="logo_edie_footer">Edie</div>
+			<div class="logo_social">
+			<i class="fab fa-instagram-square"></i>
+			<i class="fab fa-twitter-square"></i>
+			<i class="fab fa-linkedin"></i></div>
+		</div>
+
+		
+		<div class="banner_input">
 			<label for="email">Want us to contact you?</label>
-			<input type="email" name="banner_email" id="input_newsletter">
+			<div class="input_and_btn">
+				<input type="email" name="banner_email" class="input_newsletter">
+				<button type="submit" class="btn_join">Join</button>
+			</div>
+			<!-- <div id="email-input">
+				<input type="text" placeholder="E-mail" id="email">
+				<button type="button" class="addbut1" disabled="disabled">Add Me</button>
+			</div> -->
 		</div>
 	</footer>
 	<footer_copyright>created by <a href="##">Hakim Had</a> - devChallenge.io</footer_copyright>
