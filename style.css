@@ -99,7 +99,6 @@ li{
 
 .banner{
     margin-left: 50px;
-    margin-right: 50px;
 }
 .banner_ask{
     font-size: 18px;
@@ -120,7 +119,7 @@ li{
     margin-bottom: 42px;
     
 }
-.banner_image img{
+.banner_photo{
     border-radius: 20px;
     text-align: center;
     margin-top: 42px;
@@ -174,7 +173,6 @@ li{
 }
 
 .bloc_offer{
-    
     margin-top: 194px;
     margin-left: 15%;  
 }
@@ -183,15 +181,6 @@ li{
     font-size: 36px;
     font-weight: 500;
     width: 330px;
-}
-.card_title{
-    width: 350px;
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 35px;
-}
-.card_text{
-    margin-top: 24px;
 }
 .cards{
     display: flex;
@@ -205,6 +194,17 @@ li{
     height: auto;
     padding: 67px 0 67px 34px;
 }
+.card_title{
+    width: 350px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+.card_text{
+    margin-top: 24px;
+}
+
+
 
 .card:hover{
     box-shadow: 0px 0px 20px 16px rgb(51 51 51 / 10%);
@@ -220,7 +220,8 @@ li{
     /* padding: 5px; */
     color: white;
     background-color: blue;
-    border-radius: 10px;
+    border-radius: 26px;
+    padding: 21px
 }
 .icon1{
     background-color: rgba(45, 156, 219, 1);
@@ -428,3 +429,137 @@ footer li{
     font-weight: 800;
 }
 
+@media screen and (max-width:1000px){
+    .logo_up_left{
+        font-size: 24px;
+        font-weight: 800;  
+    }
+    .banner{
+        margin-left: 0px;
+    } 
+    .banner_ask{
+        font-size: 12px;
+        font-weight: 500px;
+        margin-left: 40px;
+        margin-top: 48px;
+    }
+    .banner_title{
+        width: 272px;
+        font-size: 24px;
+        line-height: 36px;
+        margin-left: 40px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .banner_image{
+        /* background-color: brown; */
+        text-align: center;
+        margin: 0px auto 22px auto;
+    }
+    .banner_photo{
+        /* height: auto; */
+        width:95%;
+        margin: 0px;
+        border-radius: 20px;
+        text-align: center;
+       
+    }
+    .banner_call_to_action{
+        margin-left: 40px;
+        width: 380px;
+    }
+    .banner_h2{
+        font-size: 24px;
+        width: 210px;
+        line-height: 36px;
+    }
+    .banner_p{
+        font-size: 12px;
+        width: 275px;
+        margin-top: 33px;
+        margin-bottom: 31px;
+    }
+    .banner label, .footer_input label{
+        font-size: 10px;
+    }
+
+    .bloc_offer{
+        margin-top: 102px;
+        margin-left: 0;
+    }
+    .bloc_offer span{
+        font-size:24px;
+        line-height: 36px;
+        width: 259px;
+        margin-left: 49px;
+    }
+    .cards{
+        flex-direction: column;
+        margin-top: 46px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .card{
+        width: 310px;
+        height: auto;
+        padding: 67px 0 67px 50px;
+        margin-bottom: 72px;
+    }
+    .good_design{
+        font-size: 24px;
+        line-height: 36px;
+        width: 260px;
+        margin-top: 28px;
+        margin-bottom: 12px;
+        margin-left: 35px;
+        
+    }
+    .bloc_gallery{
+        margin-left: 10px;
+    }
+    .bloc_gallery_pics{
+        display:block;
+        
+    }
+    .gallery_card{
+        width: 350px;
+        margin-top: 36px;
+    }
+    .gallery_card img{
+        width: 350px;
+        margin-bottom: 13px;
+    }
+    .gallery_card_text1{
+        margin-bottom: 0;
+    }
+    .see_more_gallery{
+        position: inherit;
+        text-align: start;
+        margin-top: 35px;
+    }
+    .bloc_team{
+        display:block;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    .meet_team{
+        font-size: 18px;
+    }
+    .chilled_team{
+        width: 280px;
+        font-size: 36px;
+        line-height: 54px;
+        margin-top: 7px;
+        margin-bottom: 14px;
+    }
+    .teams_pictures{
+        margin-top: 36px;
+        margin-right: 15px;
+    }
+    .teams_pictures img{
+        width: 171px;
+    }
+    .teams_pic1{
+        margin-right: 9px;
+    }
+}
