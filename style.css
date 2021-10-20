@@ -70,6 +70,10 @@ header{
     margin: 50px 56px 0 50px;
 
 }
+header a{
+    text-decoration: none;
+    color: rgba(51, 51, 51, 1);
+}
 
 .logo_up_left{
     font-family: "Heebo",sans-serif;
@@ -82,9 +86,11 @@ header{
     width: 50%;
     min-width: 700px;
 }
-.nav_top ul{
+.nav label, #menu_checkbox{
+    display: none;
+}
+.bloc_menu{
     display: flex;
-    flex-direction: row;
     justify-content:space-between ;
 
 }
@@ -120,6 +126,7 @@ li{
     
 }
 .banner_photo{
+    width: 100%;
     border-radius: 20px;
     text-align: center;
     margin-top: 42px;
@@ -195,7 +202,6 @@ li{
     padding: 67px 0 67px 34px;
 }
 .card_title{
-    width: 350px;
     font-size: 24px;
     font-weight: 700;
     margin-top: 35px;
@@ -388,10 +394,9 @@ li{
 }
 
 footer{
-    height: 385px;
+    
     margin: 0;
-    background-color: black;
-    padding: 20px 150px 0;
+    background-color: rgba(16, 14, 29, 1)
 }
 .foot_container{
     display: flex;
@@ -400,8 +405,10 @@ footer{
     align-items: flex-start;
     font-size: 18px;
     font-weight: 400;
-    height: 344px;   
+    height: 344px; 
+    background-color: rgba(16, 14, 29, 1);
     color: rgba(255, 255, 255, 1);
+    padding: 20px 150px 0;
     /* padding:50px 10% 10px 15% */
 }
 .nav_bottom ul{
@@ -413,16 +420,22 @@ footer{
 footer li{
     font-size: 18px;
     font-weight: 400;
-    color:rgba(255, 255, 255, 1)
+    color:rgba(255, 255, 255, 1);
 }
 
 .copyright{
     text-align: center;
     color: grey;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 .copyright a{
     text-decoration: none;
     color: rgba(130, 130, 130, 1);
+}
+footer a{
+    text-decoration: none;
+    color: rgba(255,255,255, 1);
 }
 .footer_social{
     font-size: 36px;
@@ -433,6 +446,35 @@ footer li{
     .logo_up_left{
         font-size: 24px;
         font-weight: 800;  
+    }
+    .nav_top{
+        width: auto;
+        min-width: initial;
+    }
+
+    /*---test menu nav----*/
+    .bloc_menu{
+        display: none;
+        flex-direction: column;
+        background-color: yellow;
+        height: 220px;
+    }
+    .bloc_menu a{
+        width:50%;
+    }
+
+    .nav_top label{
+        display: block;
+        position: absolute;
+    left: 280px;
+    }
+    .nav_top:hover .bloc_menu{
+        display: flex;
+        position: absolute;
+    }
+    /*-------*/
+    .menu_icon{
+        display: flex;
     }
     .banner{
         margin-left: 0px;
@@ -453,20 +495,18 @@ footer li{
     }
     .banner_image{
         /* background-color: brown; */
-        text-align: center;
+       
         margin: 0px auto 22px auto;
     }
     .banner_photo{
         /* height: auto; */
-        width:95%;
-        margin: 0px;
-        border-radius: 20px;
-        text-align: center;
-       
+        width:360px;
+        margin: 0 0 0 10px;
+        border-radius: 20px;       
     }
     .banner_call_to_action{
         margin-left: 40px;
-        width: 380px;
+        width: auto;
     }
     .banner_h2{
         font-size: 24px;
@@ -500,10 +540,13 @@ footer li{
         margin-bottom: 0;
     }
     .card{
+        box-shadow: 0px 0px 20px 16px rgb(51 51 51 / 10%);
+        border-radius: 27px;
         width: 310px;
         height: auto;
-        padding: 67px 0 67px 50px;
+        padding: 67px 0 67px 33px;
         margin-bottom: 72px;
+        margin-left: 15px;
     }
     .good_design{
         font-size: 24px;
@@ -555,11 +598,48 @@ footer li{
     .teams_pictures{
         margin-top: 36px;
         margin-right: 15px;
+        justify-content: flex-start;
     }
     .teams_pictures img{
         width: 171px;
     }
     .teams_pic1{
         margin-right: 9px;
+    }
+    .quote_customer{
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 500;
+        width: 351px;
+        margin-left: 10px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        padding-right: 0px;
+    }
+    .quote1{
+        padding: 0;
+    }
+    .quote1 p{
+        margin-bottom: 10px;
+    }
+    .customer_profil{
+        margin-top: 0;
+    }
+    footer{
+        
+        padding: 0px;
+    }
+    .foot_container{
+        display: block;
+        height: auto;
+        padding: 0 41px;
+    }
+
+    .footer_social{
+        margin-top: 64px;
+        margin-bottom: 64px;;
+    }
+    .footer_input label{
+        max-width: max-content;
     }
 }
